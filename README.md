@@ -55,7 +55,7 @@ Este é um projeto simples de um blog onde os usuários podem postar mensagens. 
 6. Inicie o servidor:
 
    ```bash
-   [Comando para iniciar o servidor, por exemplo: python manage.py runserver]
+   [python manage.py runserver]
    ```
 
 7. Acesse o blog no navegador:
