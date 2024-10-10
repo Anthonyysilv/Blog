@@ -28,7 +28,7 @@ Este é um projeto simples de um blog onde os usuários podem postar mensagens. 
 2. Instale as dependências do projeto:
 
    ```bash
-   [Comando para instalar as dependências, por exemplo: pip install -r requirements.txt]
+   [pip install -r requirements.txt]
    ```
 
 3. Configure o banco de dados no arquivo de configuração SQL Workbench.
