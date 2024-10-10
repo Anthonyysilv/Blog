@@ -13,7 +13,7 @@ Este é um projeto simples de um blog onde os usuários podem postar mensagens. 
 ## Tecnologias utilizadas
 
 - **Backend**: [PHP]
-- **Frontend**: [HTML, CSS, JavaScript, etc.]
+- **Frontend**: [HTML, CSS, JavaScript]
 - **Banco de Dados**: [MySQL]
 
 ## Instalação
