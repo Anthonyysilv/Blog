@@ -5,7 +5,7 @@
     require_once 'core/sql.php';
     require_once 'core/mysql.php';
 
-    foreach($_GET as $indice => $dado){
+    foreach($_GET as $indice => $dado) {
         $$indice = limparDados($dado);
     }
 
@@ -28,47 +28,47 @@
     $data_post = date_format($data_post, 'd/m/Y H:i:s');
 
 ?>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php echo $post['titulo']?></title>
-    <link rel="stylesheet" href="lib/bootstrap-4.2.1-dist/css/bootstrap.min.css">
-</head>
-<body>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <?php
-                    include 'includes/topo.php';
-                ?>
+<html>
+    <head>
+        <title><?php echo $post['titulo']?></title>
+        <link rel="stylesheet" 
+            href="lib/bootstrap-4.2.1-dist/css/bootstrap.min.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <?php
+                        include 'includes/topo.php';
+                    ?>
 
+                </div>
             </div>
-        </div>
-        <div class="row" style="min-height: 500px;">
-            <div class="col-md-12">
-                <?php include 'includes/menu.php';?>
-            </div>
-            <div class="col-md-10" style="padding-top: 50px;">
-                <div class="card-body">
-                    <h5 class="card-title"><?php echo $post['titulo'] ?> </h5>
-                    <h5 class="card-subtitle mb-2 text-muted"> 
-                        <?php echo $data_post ?> Por <?php echo $post['nome'] ?>
-                    </h5>
-                    <div class="card-text">
-                        <?php echo html_entity_decode($post['texto']) ?>
+            <div class="row" style="min-height: 500px;">
+                <div class="col-md-12">
+                    <?php include 'includes/menu.php'; ?>
+                </div>
+                <div class="col-md-10" style="padding-top: 50px;">
+                    <div class="card-body">
+                        <h5 class="card-title"><?php echo $post['titulo']?></h5>
+                        <h5 class="card-subtitle mb-2 text-muted">
+                            <?php echo $data_post?> Por <?php echo $post['nome']?>
+                        </h5>
+                        <div class="card-text">
+                            <?php echo html_entity_decode($post['texto']) ?>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <?php
-                    include 'includes/rodape.php';
-                ?>
+            <div class="row">
+                <div class="col-md-12">
+                    <?php 
+                        include 'includes/rodape.php';
+                    ?>
+                    <button class="btn btn-dark mt-5"><a href="index.php">Voltar</a></button>
+                </div>
             </div>
         </div>
-    </div>
-    <script src="lib/bootstrap-4.2.1-dist/js/bootstrap.min.js"></script>
-</body>
+        <script src="lib/bootstrap-4.2.1-dist/js/bootstrap.min.js"></script>
+    </body>
 </html>
