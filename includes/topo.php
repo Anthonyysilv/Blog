@@ -3,7 +3,7 @@
 ?>
 <div class="card">
     <div class="card-head">
-        <h1> Projeto Blog em PHP + MySQL IFSP - Anthony</h1>
+        <h1>Projeto Blog em PHP + MySQL IFSP - Anthony</h1>
     </div>
     <?php if(isset($_SESSION['login'])) : ?>
     <div class="card-body text-right">
