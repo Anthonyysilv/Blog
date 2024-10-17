@@ -1,5 +1,5 @@
 <?php
-    #arquivo que gera as instruções automaticamente
+    //Documento responsavel por criar as SQL's Statements para enviar comandos ao banco de dados
     function insert(string $entidade, array $dados) : string
     {
         $instrucao = "INSERT INTO {$entidade}";
