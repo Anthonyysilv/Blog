@@ -159,7 +159,7 @@
         }
 
         $instrucao = select($entidade, $campos, $coringa_criterio, $ordem);
-        
+        echo $instrucao;
         $conexao = conecta();
 
         $stmt = mysqli_prepare($conexao, $instrucao);
@@ -168,7 +168,7 @@
             $comando = 'mysqli_stmt_bind_param($stmt,';
             $comando .= '\'' . implode('', $tipo) . '\',';
             $comando .= '$' . implode(', $', $campos_criterio) . ');';
-        
+            
             eval($comando);
         }
 
