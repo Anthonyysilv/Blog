@@ -42,7 +42,7 @@
                     $criterio = [];
 
                     if(!empty($busca)){
-                        $criterio[] = ['nome', 'like', "%{$busca}%"]; #usado para buscar por nome (dá pra mudar viu?? 😏)
+                        $criterio[] = ['email', 'like', "%{$busca}%"]; #usado para buscar por nome (dá pra mudar viu?? 😏)
                     }
                     $result = buscar(
                         'usuario',
