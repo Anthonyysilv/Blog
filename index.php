@@ -49,6 +49,10 @@
                         'AND',
                         'titulo',
                         'like',
+                        "%{$busca}%",
+                        'OR',
+                        'texto',
+                        'like',
                         "%{$busca}%"
                     ];
                 }
